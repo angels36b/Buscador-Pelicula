@@ -1,0 +1,76 @@
+{
+	"Search": [
+		{
+			"Title": "Tarzan",
+			"Year": "1999",
+			"imdbID": "tt0120855",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BY2ZiYWUxN2ItYmQxZi00NDlkLWE2NDAtOTNmYTg1MDI0NDk1XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
+		},
+		{
+			"Title": "The Legend of Tarzan",
+			"Year": "2016",
+			"imdbID": "tt0918940",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMzY3OTI0OTcyMF5BMl5BanBnXkFtZTgwNjkxNTAwOTE@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Greystoke: The Legend of Tarzan, Lord of the Apes",
+			"Year": "1984",
+			"imdbID": "tt0087365",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BM2NmYjZjOGItYTQ0ZC00YjcyLTk3MWUtYzdmZjY1MGNkMDViXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan",
+			"Year": "2013",
+			"imdbID": "tt1705952",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMTQyODEwMTM2Nl5BMl5BanBnXkFtZTgwMTg1MTA3MDE@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan 2: The Legend Begins",
+			"Year": "2005",
+			"imdbID": "tt0437503",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BODUwZWRkMzAtYzFhMS00MGU5LWJhNDQtNzI2NGQ1NDA3NTBiXkEyXkFqcGdeQXVyODc5NjY4MzU@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan the Ape Man",
+			"Year": "1932",
+			"imdbID": "tt0023551",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BNTVlMDAwMDQtMTEzMC00YjhlLWEyYTctNjMzN2M0NGI0MTEwXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan the Ape Man",
+			"Year": "1981",
+			"imdbID": "tt0083170",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BZGU5ZTUyZmMtZjExYy00MDAzLTljZTEtMGE0MWI5YWFiYTJkXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan & Jane",
+			"Year": "2002",
+			"imdbID": "tt0313680",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMjAwMTM5NzM4OF5BMl5BanBnXkFtZTcwOTE2NDkyMQ@@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan and His Mate",
+			"Year": "1934",
+			"imdbID": "tt0025862",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BNmQ4OWJhY2MtNWUzZi00YjcwLThhNmEtMWU0YWQzNDEzNDcxXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+		},
+		{
+			"Title": "Tarzan Finds a Son!",
+			"Year": "1939",
+			"imdbID": "tt0032007",
+			"Type": "movie",
+			"Poster": "https://m.media-amazon.com/images/M/MV5BMGU5MDdhYzktYjUyNi00YjYyLThjNDMtNjRjYmE4NjJlNzYwXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg"
+		}
+	],
+	"totalResults": "174",
+	"Response": "True"
+}
