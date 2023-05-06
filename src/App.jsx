@@ -1,49 +1,38 @@
 
 import './App.css'
-import responseMovies from './mocks/with-result.json'
-//import withoutResult from '.mocks/not-result.json'
+
+import { useMovies } from './hook/useMovies'
+import { Movies } from './components/Movies.jsx'
 
 
 function App() {
 
-const movies = responseMovies.Search
-const hasMovies = movies?.length > 0
+const { movies } = useMovies()
+
+
+const handleSubmit = (event) => {
+  event.preventDefault()
+  const fields = Object.fromEntries(new window.FormData(event.target)) 
+  console.log(fields)
+}
+// const hasMovies = movies?.length > 0
+
+// receives and decides the transformation of the data of the API.
 
   return (
-    <div className='page' >
+    <div className='page'>
       <header>
         <h1> Buscador de peliculas</h1>
-        <form className='form'>
-          <input placeholder='Avengers, Start wars' />
-          <button type='submit'> Buscar </button>
+        <form className='form' onSubmit={handleSubmit}>
+           
+          <input name='query' placeholder='Avengers, Start wars' />
+          <input name='campo' placeholder='Avengers, Start wars' />
+          <button type='submit'>Buscar</button>
         </form>
       </header>
+
       <main>
-        Aqui iran los resultados
-
-        {
-          hasMovies
-            ?(
-              <ul>
-                {
-                  movies.map(movie => (
-                    <li key={movie.imdbID}>
-                      <h3>{movie.Title}</h3>
-                      <p>{movie.Year}</p>
-                      <img src={movie.Poster} alt={movie.Title} />
-
-                    </li>
-                  ))
-                }
-              </ul>
-            ) 
-            :(
-          <p>No se encontraron peliculas para esta busqueda </p>
-          )
-            
-          
-            
-        }
+       <Movies movies={movies} />
       </main>
 
     </div>
