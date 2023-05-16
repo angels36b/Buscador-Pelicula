@@ -1,32 +1,32 @@
-
 import './App.css'
-
+import { useState } from 'react'
 import { useMovies } from './hook/useMovies'
 import { Movies } from './components/Movies.jsx'
-
 
 function App() {
 
 const { movies } = useMovies()
+const [query, setQuery] = useState('')
 
 
 const handleSubmit = (event) => {
   event.preventDefault()
-  const fields = Object.fromEntries(new window.FormData(event.target)) 
-  console.log(fields)
+  console.log({ query })
 }
-// const hasMovies = movies?.length > 0
 
+const handleChange = (event)=>{
+  setQuery(event.target.value)
+}
+
+// const hasMovies = movies?.length > 0
 // receives and decides the transformation of the data of the API.
 
   return (
     <div className='page'>
       <header>
         <h1> Buscador de peliculas</h1>
-        <form className='form' onSubmit={handleSubmit}>
-           
-          <input name='query' placeholder='Avengers, Start wars' />
-          <input name='campo' placeholder='Avengers, Start wars' />
+        <form className='form' onSubmit={handleSubmit}>       
+          <input onChange={handleChange} value='value' name='query' placeholder='Avengers, Start wars' />
           <button type='submit'>Buscar</button>
         </form>
       </header>
