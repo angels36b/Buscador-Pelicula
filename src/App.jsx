@@ -4,6 +4,32 @@ import { useMovies } from './hook/useMovies'
 import { Movies } from './components/Movies.jsx'
 import { useEffect } from 'react'
 
+
+//creacion de custom Hook useSearch
+function useSearch () {
+  const [search, updateSearch] =useState('')
+  const [error, setError] = useState(null) 
+
+  useEffect(()=> {
+    if(search === ''){
+      setError('Sin nombre de pelicula, no hay resultados')
+      return
+    }
+    if (search.match(/\d+$/)){
+      setError('No se puede buscar la pelicula con un numero')
+      return
+    }
+  
+    if(search.length < 3){
+      setError('La busqueda debe tener al menos 3 caracteres')
+      return
+    }
+    setError (null)
+  }, [search])
+  
+    return {search, updateSearch, error}
+}
+
 function App() {
 
 const { movies } = useMovies()
@@ -19,22 +45,6 @@ const handleChange = (event)=>{
   setQuery(event.target.value)
 }
 
-useEffect(()=> {
-  if(query === ''){
-    setError('Sin nombre de pelicula, no hay resultados')
-    return
-  }
-  if (query.match(/\d+$/)){
-    setError('No se puede buscar la pelicula con un numero')
-    return
-  }
-
-  if(query.length < 3){
-    setError('La busqueda debe tener al menos 3 caracteres')
-    return
-  }
-  setError (null)
-}, [query])
 
 
 // const hasMovies = movies?.length > 0
