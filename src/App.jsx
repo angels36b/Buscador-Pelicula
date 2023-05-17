@@ -45,7 +45,11 @@ useEffect(()=> {
       <header>
         <h1> Buscador de peliculas</h1>
         <form className='form' onSubmit={handleSubmit}>       
-          <input onChange={handleChange} value={query} name='query' placeholder='Avengers, Start wars' />
+          <input
+          style={{ 
+            border: '1px solid transparent',
+            borderColor: error ? 'red':'transparent'
+          }}  onChange={handleChange} value={query} name='query' placeholder='Avengers, Start wars' />
           <button type='submit'>Buscar</button>
         </form>
         {error && <p style={{color: 'red'}}> {error} </p>}
